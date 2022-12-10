@@ -1,0 +1,127 @@
+/* for pc */
+* {
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    background-image: url('shops_cover.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* top_navigation */
+#top_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#top_navigation button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 17px;
+    width: 170px;
+    cursor: pointer;
+    background-color: rgba(37, 115, 134, 0.558);
+    color: aliceblue;
+    border: none;
+}
+#top_navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* heading */
+#heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#heading h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 100px;
+    color: white;
+}
+
+/* image */
+#image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    opacity: 0.7;
+    margin: 0 300px;
+    border-radius: 20px;
+}
+#image img {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+/* marquee */
+marquee {
+    background-color: rgba(5, 5, 5, 0.5);
+    color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* shopDetailsContainer */
+.shopDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(17, 14, 52, 0.7);
+}
+.shopDetails {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.shopDetails > p {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+.shopDetails button {
+    background-color: rgba(37, 115, 134, 0.558);
+    border: none;
+    margin: 5px;
+    width: 150px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.shopDetails button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* gotoTop */
+.goToTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.goToTop button {
+    background-color: rgba(0, 0, 0, 0.704);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.goToTop button:hover {
+    background-color: rgba(254, 254, 254, 0.5);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}

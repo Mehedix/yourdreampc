@@ -1,0 +1,265 @@
+/* for pc */
+* {
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    background-image: url('index_cover.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* top_navigation */
+#top_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#top_navigation button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 17px;
+    width: 170px;
+    cursor: pointer;
+    background-color: rgba(37, 115, 134, 0.558);
+    color: aliceblue;
+    border: none;
+}
+#top_navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* heading */
+#heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#heading h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 100px;
+    color: white;
+}
+
+/* image */
+#image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    opacity: 0.7;
+    margin: 0 300px;
+    border-radius: 20px;
+}
+#image img {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+/* overview */
+#overview {
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: auto;
+}
+#overview div {
+    background-color: rgba(16, 119, 122, 0.256);
+    color: aliceblue;
+    margin: 30px 10px;
+    padding: 10px;
+    text-align: left;
+    color: blanchedalmond;
+    width: 350px;
+    border-radius: 25px;
+}
+
+/* marquee */
+marquee {
+    background-color: rgba(5, 5, 5, 0.5);
+    color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* navigation */
+#navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 15px;
+    background-color: rgba(28, 14, 44, 0.5);
+}
+#navigation h3 {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px 15px;
+}
+#first4, #second4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navigation > div > button {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: antiquewhite;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    width: 170px;
+    border: none;
+}
+#navigation > div > button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* components */
+#components {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+.componentGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    width: 350px;
+    background-color: rgba(16, 119, 122, 0.256);
+}
+.componentGroup p{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    margin: 0;
+    width: 300px;
+    font-weight: bolder;
+}
+.componentGroup button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 10px;
+    margin: 5px 0 20px;
+    width: 150px;
+    cursor: pointer;
+}
+.componentGroup button:hover {
+    background-color: rgba(16, 119, 122, 0.256);
+    border: none;
+}
+
+/* graphics */
+.graphics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.graphics img {
+    height: 300px;
+    width: 600px;
+}
+
+/* print */
+.print {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.print button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    border-radius: 25px;
+}
+.print button:hover {
+    background-color: rgba(16, 119, 122, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+/* for phone */
+@media screen and (max-width: 600px) {
+    /* top_navigation */
+    #top_navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    #top_navigation button {
+        text-align: left;
+        width: 100%;
+        font-size: smaller;
+    }
+
+    /* heading */
+    #heading h1 {
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* image */
+    #image {
+        margin: auto;
+    }
+    #image img {
+        height: 160px;
+        width: 100%;
+    }
+
+    /* overview_details */
+    #overview {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    #overview div {
+        margin: 10px;
+        width: auto;
+        font-size: small;
+    }
+
+    /* marquee */
+    marquee {
+        margin: 13px 0;
+    }
+
+    /* ebook_navigation */
+    #navigation {
+        font-size: small;
+        width: 100%;
+    }
+    #first4, #second4 {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    #navigation > div > button {
+        width: 100%;
+        text-align: left;
+        margin: 5px 0
+    }
+}
